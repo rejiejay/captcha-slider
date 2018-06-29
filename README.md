@@ -8,6 +8,8 @@ html5 Canvas drag captcha slider jigsaw
 
 [demo](https://www.rejiejay.cn/github/captcha-slider)
 
+[图片](https://github.com/rejiejay/captcha-slider/blob/master/demo.png)
+
 ## 使用 Usage
 
 引入组件.  
