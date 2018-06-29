@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>captcha-slider</title>
+
+  <link rel="stylesheet" type="text/css" href="./captcha-slider.css">
+  <script src="./captcha-slider.js"></script>
+
+</head>
+<body>
+
+	<div id="captcha-slider" class="captcha-slider"></div>
+
+	<script>
+
+		CaptchaSlider.init({
+			id: 'captcha-slider',
+			width: 310,
+			height: 155,
+		})
+		.then(function (succeed) {
+
+			alert('succeed!');
+		}, function (error) {
+
+			alert('error!');
+		});
+		
+	</script>
+</body>
+</html>

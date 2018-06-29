@@ -1,0 +1,166 @@
+/*!
+ * captcha-slider v1.0.0 https://github.com/rejiejay/captcha-slider
+ * Authors rejiejay 454766952@qq.com
+ * Licensed MIT 
+ */
+.captcha-slider .captcha-slider-content {
+  position: relative;
+}
+.captcha-slider .captcha-slider-content .captcha-slider-position {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.captcha-slider .captcha-slider-content .captcha-slider-refresh {
+  position: absolute;
+  top: 15px;
+  z-index: 2;
+  cursor: pointer;
+}
+.captcha-slider .captcha-slider-content .captcha-slider-refresh svg {
+  fill: #fff;
+}
+.captcha-slider .captcha-slider-content .captcha-slider-refresh:hover svg {
+  fill: #F56C6C;
+}
+.captcha-slider .captcha-slider-drag {
+  position: relative;
+  text-align: center;
+  width: 310px;
+  height: 40px;
+  line-height: 40px;
+  margin-top: 15px;
+  background: #f7f9fa;
+  color: #45494c;
+  border: 1px solid #e4e7eb;
+}
+.captcha-slider .captcha-slider-drag .slider-drag-mask {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 40px;
+  border: 0 solid #1991FA;
+  background: #D1E9FE;
+}
+.captcha-slider .captcha-slider-drag .slider-drag-mask .slider-drag-handle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: background 0.2s linear;
+}
+.captcha-slider .captcha-slider-drag .slider-drag-mask .slider-drag-handle svg {
+  fill: #606266;
+  transition: fill 0.2s linear;
+}
+.captcha-slider .captcha-slider-drag .slider-drag-mask .slider-drag-handle:hover {
+  background: #1991FA;
+}
+.captcha-slider .captcha-slider-drag .slider-drag-mask .slider-drag-handle:hover svg {
+  fill: #fff;
+}
+.captcha-slider .captcha-slider-drag .slider-drag-text {
+  color: #606266;
+  font-size: 16px;
+  text-align: center;
+  line-height: 40px;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.captcha-slider .slider-drag-activate .slider-drag-mask {
+  height: 38px;
+  border: 1px solid #1991FA;
+}
+.captcha-slider .slider-drag-activate .slider-drag-mask .slider-drag-handle {
+  height: 38px;
+  top: -1px;
+  background: #1991FA;
+  border: 1px solid #1991FA;
+}
+.captcha-slider .slider-drag-activate .slider-drag-mask .slider-drag-handle svg {
+  fill: #fff;
+}
+.captcha-slider .slider-drag-succeed .slider-drag-mask {
+  height: 38px;
+  border: 1px solid #52CCBA;
+  background: #D2F4EF;
+}
+.captcha-slider .slider-drag-succeed .slider-drag-mask .slider-drag-handle {
+  height: 38px;
+  top: -1px;
+  background: #52CCBA;
+  border: 1px solid #52CCBA;
+}
+.captcha-slider .slider-drag-succeed .slider-drag-mask .slider-drag-handle svg {
+  fill: #fff;
+}
+.captcha-slider .slider-drag-succeed .slider-drag-mask .slider-drag-handle:hover {
+  background: #52CCBA;
+}
+.captcha-slider .slider-drag-failure .slider-drag-mask {
+  height: 38px;
+  border: 1px solid #f57a7a;
+  background: #fce1e1;
+}
+.captcha-slider .slider-drag-failure .slider-drag-mask .slider-drag-handle {
+  height: 38px;
+  top: -1px;
+  background: #f57a7a;
+  border: 1px solid #f57a7a;
+}
+.captcha-slider .slider-drag-failure .slider-drag-mask .slider-drag-handle svg {
+  fill: #fff;
+}
+.captcha-slider .slider-drag-failure .slider-drag-mask .slider-drag-handle:hover {
+  background: #f57a7a;
+}
+.flex-start {
+  display: -webkit-box;
+  /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+  display: -moz-box;
+  /* 老版本语法: Firefox (buggy) */
+  display: -ms-flexbox;
+  /* 混合版本语法: IE 10 */
+  display: -webkit-flex;
+  /* 新版本语法: Chrome 21+ */
+  display: flex;
+  /* 新版本语法: Opera 12.1, Firefox 22+ */
+  justify-content: flex-start;
+}
+.flex-start-center {
+  display: -webkit-box;
+  /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+  display: -moz-box;
+  /* 老版本语法: Firefox (buggy) */
+  display: -ms-flexbox;
+  /* 混合版本语法: IE 10 */
+  display: -webkit-flex;
+  /* 新版本语法: Chrome 21+ */
+  display: flex;
+  /* 新版本语法: Opera 12.1, Firefox 22+ */
+  justify-content: flex-start;
+  align-items: center;
+}
+.flex-center {
+  display: -webkit-box;
+  /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+  display: -moz-box;
+  /* 老版本语法: Firefox (buggy) */
+  display: -ms-flexbox;
+  /* 混合版本语法: IE 10 */
+  display: -webkit-flex;
+  /* 新版本语法: Chrome 21+ */
+  display: flex;
+  /* 新版本语法: Opera 12.1, Firefox 22+ */
+  justify-content: center;
+  align-items: center;
+}
+.flex-rest {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
